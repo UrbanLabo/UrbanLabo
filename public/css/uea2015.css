@@ -155,3 +155,10 @@ h2 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.rank {
+    background-color: #8A6BBE;
+    font-size: 14px;
+    padding-left: 3px;
+    padding-right: 3px;
+}

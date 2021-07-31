@@ -50,7 +50,7 @@ app.get('/ueamap2015', (req, res) => {
 app.get('/uea2015/:ueaCode', (req, res) => {
   //都市圏データの取得
   connection.query(
-    'SELECT * FROM ueadata2015 WHERE ueaCode=?',
+    'SELECT * FROM ueadata2015view WHERE ueaCode=?',
         [req.params.ueaCode],
         (error, results_uea) => {
             //市町村データの取得
