@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>全国都市雇用圏マップ-2015年&nbsp;|&nbsp;UrbanLabo</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <link rel="stylesheet" href="/css/ueamap2015.css">
+        <link rel="stylesheet" href="/css/select_uea_nav.css">
+        <link rel="stylesheet" href="/css/footer.css">
+        <link rel="stylesheet" href="/js/leaflet/leaflet.css">
+        <script type="text/javascript" src="/js/leaflet/leaflet.js"></script>
+    </head>
+    <body>
+        <!-- ヘッダの挿入 -->
+        <%- include('header') %> 
+        <main>
+            <h2>全国都市雇用圏マップ-2015（平成27）年</h2>
+            <p class="attention">読み込みに時間がかかる場合があります。</p>
+            <p class="attention">ポップアップの都市圏名をクリックすることで各都市圏のページへ飛ぶことができます。</p>
+            <div id='map'></div>
+        </main> 
+        <!-- 都市圏選択ナビメニューの挿入 -->
+        <%- include('select_uea_nav') %> 
+        <!-- フッタの挿入 -->
+        <%- include('footer') %> 
+    </body>
+    <script type="text/javascript" src="/geofile/uea2015.js"></script>
+    <script type="text/javascript" src="/js/ueamap2015.js"></script>
+</html>

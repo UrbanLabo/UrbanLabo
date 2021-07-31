@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Urban Labo</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <link rel="stylesheet" href="/css/top.css">
+        <link rel="stylesheet" href="/css/footer.css">
+    </head>
+    <body>
+        <!-- ヘッダの挿入 -->
+        <%- include('header') %> 
+        <main>
+            <!-- トップ画像とトップメッセージ -->
+            <div class="top">
+                <img src="/img/top-img.jpg" alt="仙台市街のようす">
+                <div class="top-message">
+                    <h2 class="content-title">都市を見る</h2>
+                    <p>日本全国には大小さまざまな都市圏があります。<br/>
+                        それは行政区域を超えて広がる<br/>
+                        都市と郊外を観察するための概念です。<br/><br/>
+                        このサイトでは<br/>
+                        通勤に着目した都市圏である<br/>
+                        「都市雇用圏」を取り上げ<br/>
+                        さまざまなデータやグラフ・地図を用いて<br/>
+                        その姿を可視化します。</p>
+                </div>
+            </div>
+            <!-- コンテンツ選択部分 -->
+            <div class="select-contents">
+                <div class="about-this">
+                    <h2 class="content-title">このサイトについて</h2>
+                    <div class="container">
+                        <a href="/aboutThisSite" class="item">このサイトの目的</a>
+                        <a href="/aboutUEA" class="item">都市雇用圏について</a>
+                        <a href="" class="item">使用しているデータについて</a>
+                    </div>
+                </div>
+                <div class="maps">
+                    <h2 class="content-title">全国都市雇用圏マップ</h2>
+                    <div class="container">
+                        <a href="" class="item">令和2<br/>（2020）年</a>
+                        <a href="/ueamap2015" class="item">平成27<br/>（2015）年</a>
+                        <a href="" class="item">平成22<br/>（2010）年</a>
+                        <a href="" class="item">平成17<br/>（2005）年</a>
+                        <a href="" class="item">平成12<br/>（2000）年</a>
+                        <a href="" class="item">平成7<br/>（1995）年</a>
+                        <a href="" class="item">平成2<br/>（1990）年</a>
+                        <a href="" class="item">昭和55<br/>（1980）年</a>
+                    </div>
+                </div>
+                <div class="contents">
+                    <h2 class="content-title">コンテンツ</h2>
+                    <div class="container">
+                        <a href="" class="item">都市雇用圏ランキング</a>
+                        <a href="" class="item">ダウンロード</a>
+                    </div>
+                </div>
+            </div>
+            <a class="twitter-timeline" data-lang="ja" data-height="300" data-width="300" data-theme="light" href="https://twitter.com/labo_urban?ref_src=twsrc%5Etfw">Tweets by labo_urban</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </main>
+        <%- include('footer') %> 
+    </body>
+</html>

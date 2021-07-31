@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.select-uea-nav {
+    height: 100%;
+    float: right;
+    width: 20%;
+    /* overflow-y: scroll; */
+    /* background-color: #7B90D2; */
+    background-color: #9599E2;
+    background-image: linear-gradient(90deg, #9599E2 0%, #8BC6EC 100%);
+    
+}
+
+.select-uea-nav h3 {
+    padding-left: 15px;
+    font-size: 20px;
+}
+.uea-nav-ul {
+    height: 2000px;
+    overflow-y: scroll;
+}
+.uea-link {
+    font-size: 16px;
+}
+.select-uea-nav li {
+    margin-left: 25px;
+}
+
+.uea-link:hover {
+    background-color: white;
+    color: black;
+}

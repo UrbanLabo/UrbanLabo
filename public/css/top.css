@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+main {
+    /* background-color: #2EA9DF; */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+/* トップの配置 */
+.top {
+    position: relative;
+}
+
+/* トップメッセージの配置を指定 */
+.top-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding:50px 120px;
+}
+
+/* トップメッセージの装飾を指定 */
+.top-message h2 {
+    font-size: 36px;
+    padding-bottom: 17px;
+    font-family:"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    letter-spacing: 15px;
+    color: black;
+}
+.top-message p {
+    font-size: 20px;
+    font-family:"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    letter-spacing: 3px;
+    color: black;
+}
+
+/* トップ画像のサイズを指定 */
+.top img {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+/* コンテンツ選択部分の背景装飾等指定 */
+.select-contents {
+    width: 100%;
+    background-image: url(../img/bg-img-op06.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+}
+
+/* コンテンツ選択部分の装飾指定 */
+.container {
+    display: flex;
+}
+.item {
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-bottom: 35px;
+    background-color: #4E4F97;
+    font-size: 16px;
+    padding: 20px 40px;
+    text-align: center;
+}
+.select-contents h2 {
+    font-size: 23px;
+    background-color: #4E4F97;
+    padding-left: 25px;
+    padding-right: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: white;
+}

@@ -1,0 +1,10 @@
+<nav class="select-uea-nav">
+    <h3>都市圏を選択</h3>
+    <ul class="uea-nav-ul">
+        <% items_ueaIndex.forEach((item) => { %>
+            <li>
+                <span><a class="uea-link" href="/uea2015/<%=item.ueaCode%>"><%=item.subName %></a></span>
+            </li>
+        <% }); %>
+    </ul>
+</nav>

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+header{
+    background-color: #4E4F97;
+    width: 100%;
+    height: 75px;
+    color: white;
+}
+
+h1 {
+    font-size: 32px;
+    color: white;
+    padding-left: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    list-style: none;
+    margin-right: 23px;
+}
+
+.main-nav li {
+    margin-left: 36px;
+    list-style: none;
+}
+
+.page-header a:hover {
+    color: #7B90D2;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 2階層目の横並びはさせない */
+nav ul ul {
+    display: block;
+}
+
+/*下の階層のulや矢印の基点にするためliにrelativeを指定*/
+nav ul li{
+	position: relative;
+}
+
+/*下の階層を持っているulの指定*/
+nav li.has-child ul{
+    /*絶対配置で位置を指定*/
+	position: absolute;
+	right:0;
+	top: 54px;
+	z-index: 4;
+    /*形状を指定*/
+	background:rgba(78, 79, 151, 0.6);
+	width:300px;
+    /*はじめは非表示*/
+	visibility: hidden;
+	opacity: 1;
+    /*アニメーション設定*/
+	transition: all .3s;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+nav li.has-child ul li {
+    list-style-type: none;
+    display: inline-block; /* 横並びに */
+    margin: 10px 0 10px 0;
+}
+
+/*hoverしたら表示*/
+nav li.has-child:hover > ul,
+nav li.has-child ul li:hover > ul,
+nav li.has-child:active > ul,
+nav li.has-child ul li:active > ul{
+  visibility: visible;
+  opacity: 1;
+}
+
+/*ナビゲーションaタグの形状*/
+nav li.has-child ul li a{
+	color: #fff;
+	border-bottom:solid 1px rgba(255,255,255,0.6);
+}
+
+/* nav li.has-child ul li:last-child a{
+	border-bottom:none;
+} */
+
+nav li.has-child ul li a:hover,
+nav li.has-child ul li a:active{
+	background:white;
+    color: #7B90D2;
+}
