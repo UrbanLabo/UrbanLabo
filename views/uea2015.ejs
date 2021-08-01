@@ -54,12 +54,13 @@
                                 （中心市町村：<%= items_uea[0]["centerNums"]%>、郊外市町村：<%= items_uea[0]["suburbNums"] %>）</li>
                             <li>人口：<%= items_uea[0]["pop2015"].toLocaleString() %>人&nbsp;<span class="rank rank-pop"><%= items_uea[0]["pop_RANK"] %>位/222都市圏</span><br>
                                 （中心都市DID人口：<%= items_uea[0]["popDidC1"].toLocaleString() %>人&nbsp;<span class="rank rank-popDidC1"><%= items_uea[0]["popDidC1_RANK"] %>位/222都市圏</span>）  </li>
-                            <li>面積：<%= items_uea[0]["area"].toLocaleString() %>㎢<br>
-                                （可住地：<%= items_uea[0]["areaHabitable"].toLocaleString() %>㎢）</li>
+                            <li>面積：<%= items_uea[0]["area"].toLocaleString() %>㎢&nbsp;<span class="rank rank-area"><%= items_uea[0]["area_RANK"] %>位/222都市圏</span>）<br>
+                                （可住地：<%= items_uea[0]["areaHabitable"].toLocaleString() %>㎢&nbsp;<span class="rank rank-areaHabitable"><%= items_uea[0]["areaHabitable_RANK"] %>位/222都市圏</span>）</li>
                             <li>人口密度：<%= Math.floor(items_uea[0]["density"], 10).toLocaleString() %>人/㎢&nbsp;<span class="rank" id="rank-density"><%= items_uea[0]["density_RANK"] %>位/222都市圏</span> <br>
                                 （可住地人口密度：<%= Math.floor(items_uea[0]["densityHabitable"]).toLocaleString() %>人/㎢&nbsp;<span class="rank rank-denstiyHabitable"><%= items_uea[0]["densityHabitable_RANK"] %>位/222都市圏</span>）</li>
                             <li>年齢中位数（年齢の中央値）：<%= items_uea[0]["ageMedian"].toFixed(2) %>歳&nbsp;<span class="rank rank-age"><%= items_uea[0]["ageMedian_RANK"] %>位/222都市圏</span> </li>
-                            <li>域内生産額：<%= Math.floor(items_uea[0]["gup"]).toLocaleString() %>百万円&nbsp;<span class="rank rank-gup"><%= items_uea[0]["gup_RANK"] %>位/222都市圏</span> </li>
+                            <li>域内生産額：<%= Math.floor(items_uea[0]["gup"]).toLocaleString() %>百万円&nbsp;<span class="rank rank-gup"><%= items_uea[0]["gup_RANK"] %>位/222都市圏</span><br>
+                                （人口1人当たりの生産額：<%= Math.floor(items_uea[0]["gupPer"]*1000).toLocaleString() %>千円&nbsp;<span class="rank rank-gupPer"><%= items_uea[0]["gupPer_RANK"] %>位/222都市圏</span>）</li>
                         </ul>
                     </div>
                 </div>
