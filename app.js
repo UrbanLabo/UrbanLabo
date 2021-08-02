@@ -98,5 +98,12 @@ app.get('/ueaData2015/:ueaCode', (req, res) => {
   );
 });
 
+//herokuデプロイ用
+/* let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port); */
 
+//ローカル環境用
 app.listen(3000);

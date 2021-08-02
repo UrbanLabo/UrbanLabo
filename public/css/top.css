@@ -60,18 +60,24 @@ main {
 /* コンテンツ選択部分の装飾指定 */
 .container {
     display: flex;
+
 }
 .item {
     flex-wrap: wrap;
+    min-width: 100px;
+    min-height: 60px;
     margin-left: 30px;
     margin-bottom: 35px;
     background-color: #4E4F97;
-    font-size: 16px;
-    padding: 20px 40px;
+    /*font-size: 16px;*/
+    padding: 10px 20px;
     text-align: center;
+
+    
 }
-.select-contents h2 {
-    font-size: 23px;
+
+.select-contents h3 {
+    /*font-size: 23px;*/
     background-color: #4E4F97;
     padding-left: 25px;
     padding-right: 0;
@@ -81,4 +87,8 @@ main {
     margin-top: 10px;
     margin-bottom: 25px;
     color: white;
+}
+
+.preparation {
+    color: #986DB2;
 }

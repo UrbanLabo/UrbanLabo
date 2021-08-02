@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="/css/header.css">
         <link rel="stylesheet" href="/css/top.css">
         <link rel="stylesheet" href="/css/footer.css">
+        <script type="text/javascript" src="/js/jquery/jquery-3.6.0.min.js"></script>
     </head>
     <body>
         <!-- ヘッダの挿入 -->
@@ -30,31 +31,31 @@
             <!-- コンテンツ選択部分 -->
             <div class="select-contents">
                 <div class="about-this">
-                    <h2 class="content-title">このサイトについて</h2>
+                    <h3 class="content-title">このサイトについて</h3>
                     <div class="container">
-                        <a href="/aboutThisSite" class="item">このサイトの目的</a>
-                        <a href="/aboutUEA" class="item">都市雇用圏について</a>
-                        <a href="" class="item">使用しているデータについて</a>
+                        <a href="/aboutThisSite" class="item about-this-site">このサイトの目的</a>
+                        <a href="/aboutUEA" class="item about-uea">都市雇用圏について</a>
+                        <a class="item about-using-data preparation">使用している<br>データについて</a>
                     </div>
                 </div>
                 <div class="maps">
-                    <h2 class="content-title">全国都市雇用圏マップ</h2>
+                    <h3 class="content-title">全国都市雇用圏マップ</h3>
                     <div class="container">
-                        <a href="" class="item">令和2<br/>（2020）年</a>
+                        <a class="item 2020 preparation">令和2<br/>（2020）年</a>
                         <a href="/ueamap2015" class="item">平成27<br/>（2015）年</a>
-                        <a href="" class="item">平成22<br/>（2010）年</a>
-                        <a href="" class="item">平成17<br/>（2005）年</a>
-                        <a href="" class="item">平成12<br/>（2000）年</a>
-                        <a href="" class="item">平成7<br/>（1995）年</a>
-                        <a href="" class="item">平成2<br/>（1990）年</a>
-                        <a href="" class="item">昭和55<br/>（1980）年</a>
+                        <a class="item 2010 preparation">平成22<br/>（2010）年</a>
+                        <a class="item 2005 preparation">平成17<br/>（2005）年</a>
+                        <a class="item 2000 preparation">平成12<br/>（2000）年</a>
+                        <a class="item 1995 preparation">平成7<br/>（1995）年</a>
+                        <a class="item 1990 preparation">平成2<br/>（1990）年</a>
+                        <a class="item 1980 preparation">昭和55<br/>（1980）年</a>
                     </div>
                 </div>
                 <div class="contents">
-                    <h2 class="content-title">コンテンツ</h2>
+                    <h3 class="content-title">コンテンツ</h3>
                     <div class="container">
-                        <a href="" class="item">都市雇用圏ランキング</a>
-                        <a href="" class="item">ダウンロード</a>
+                        <a class="item ranking preparation">都市雇用圏<br>ランキング</a>
+                        <a class="item download preparation">ダウンロード</a>
                     </div>
                 </div>
             </div>
@@ -62,4 +63,5 @@
         </main>
         <%- include('footer') %> 
     </body>
+    <script type="text/javascript" src="/js/common.js"></script>
 </html>

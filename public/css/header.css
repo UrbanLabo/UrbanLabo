@@ -59,7 +59,7 @@ nav li.has-child ul{
 	z-index: 4;
     /*形状を指定*/
 	background:rgba(78, 79, 151, 0.6);
-	width:300px;
+	width:230px;
     /*はじめは非表示*/
 	visibility: hidden;
 	opacity: 1;
@@ -72,8 +72,8 @@ nav li.has-child ul{
 
 nav li.has-child ul li {
     list-style-type: none;
-    display: inline-block; /* 横並びに */
-    margin: 10px 0 10px 0;
+    display: block; /* 縦並びに */
+    margin: 5px 0 5px 0;
 }
 
 /*hoverしたら表示*/
