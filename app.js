@@ -5,11 +5,18 @@ const app = express();
 app.use(express.static('public'));
 
 //MySQLへの接続
-const connection = mysql.createConnection({
+/* const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'mysmue861',
   database: 'uea'
+}); */
+
+const connection = mysql.createConnection({
+  host: 'us-cdbr-east-04.cleardb.com',
+  user: 'bb1497301ec843',
+  password: '8fe11df3',
+  database: 'heroku_60f1468f3eac4a0'
 });
 
 //接続が出来ない時のエラー表示
