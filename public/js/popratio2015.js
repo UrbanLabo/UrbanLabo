@@ -1,4 +1,4 @@
-$.get({url: '/ueaData2015/' + ueaCode, dataType: 'json', type: 'GET'})
+$.get({url: '/ueaData2015/' + ueaCode + '/', dataType: 'json', type: 'GET'})
 .done(function(data) {
     //データの取得
     datas = [data[0]["popDidC1"], data[0]["popOutDidC1"], data[0]["popDidC2"], data[0]["popOutDidC2"], data[0]["popS1"], data[0]["popS2"], data[0]["popS3"], data[0]["popS4"]];
