@@ -21,7 +21,7 @@ var commuter = null
 
 //選択後マップの表示
 function getData(toCode){
-    $.get({url: '/commuterData2015/' + ueaCode + '/' + toCode , dataType: 'json', type: 'GET'})
+    $.get({url: '/commuterData2015/' + ueaCode + '/' + toCode, dataType: 'json', type: 'GET'})
     .done(function(data) {
         // if(counter == 0){
         //     cityOrigin.remove();
