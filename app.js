@@ -100,12 +100,15 @@ app.get('/uea2015/:ueaCode', (req, res) => {
                         (error, results_ueaIndex) => {
                           res.render('uea2015.ejs', {items_uea: results_uea, items_city: results_city, items_ueaIndex: results_ueaIndex});
                         }
+                        
                     );
+                    connection.release();
                   }
               );
               });
           }
     );
+    connection.release();
   })
 });
 
@@ -146,8 +149,9 @@ app.get('/commuterData2015/:ueaCode/:cityCode', (req, res) => {
       (error, results) => {
           //console.log(results);
           res.json(results);
+          connection.release();
       }
-  );
+    );
   });
 });
 /* app.get('/commuterData2015/:ueaCode/:cityCode', (req, res) => {
@@ -173,6 +177,7 @@ app.get('/ueaData2015/:ueaCode', (req, res) => {
       [req.params.ueaCode],
       (error, results) => {
         res.json(results);
+        connection.release();
       }
     );
   });
