@@ -27,13 +27,6 @@ $(function(){
 		$(this).html('平成17<br/>（2005）年');
 		$(this).css({color: "#986DB2"});
 	});
-	$('.2000').hover(function(){
-		$(this).html('準備中');
-		$(this).css({color: "white"});
-	},function(){
-		$(this).html('平成12<br/>（2000）年');
-		$(this).css({color: "#986DB2"});
-	});
     $('.1995').hover(function(){
 		$(this).html('準備中');
 		$(this).css({color: "white"});

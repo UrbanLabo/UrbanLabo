@@ -19,11 +19,20 @@ app.use(express.static('public'));
   database: 'heroku_60f1468f3eac4a0'
 }); */
 
-const pool = mysql.createPool({
+//heroku用プール接続
+/* const pool = mysql.createPool({
   host: 'us-cdbr-east-04.cleardb.com',
   user: 'bb1497301ec843',
   password: '8fe11df3',
   database: 'heroku_60f1468f3eac4a0'
+});  */
+
+//ローカル用プール
+const pool = mysql.createPool({
+  host: 'localhost',
+  user: 'root',
+  password: 'mysmue861',
+  database: 'uea'
 }); 
 
 //接続が出来ない時のエラー表示
@@ -69,6 +78,23 @@ app.get('/ueamap2015', (req, res) => {
           }
     );
   });
+});
+
+//全国都市雇用圏マップ2000へ
+app.get('/ueamap2000', (req, res) => {
+  res.render('ueamap2000.ejs');
+});
+
+//全国都市雇用圏マップ用データをを取得し送信
+app.get('/ueadata2000', (req, res) => {
+  pool.getConnection((err, connection) => {
+    connection.query(
+      'SELECT * FROM ueadata2000',
+      (error, results_uea2000) => {
+        res.json(results_uea2000);
+      }
+    )
+  })
 });
 
 /* app.get('/ueamap2015', (req, res) => {
@@ -194,11 +220,11 @@ app.get('/ueaData2015/:ueaCode', (req, res) => {
 }); */
 
 //herokuデプロイ用
-let port = process.env.PORT;
+/* let port = process.env.PORT;
 if (port == null || port == "") {
   port = 8000;
 }
-app.listen(port);
+app.listen(port); */
 
 //ローカル環境用
-//app.listen(3000);
+app.listen(3000);
