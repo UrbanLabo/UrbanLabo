@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>全国都市雇用圏マップ-2000年&nbsp;|&nbsp;UrbanLabo</title>
+        <meta name="application-name" content="Urban Labo">
+        <meta name="description" content="日本の代表的な都市圏である「都市雇用圏」の情報をマップやグラフで簡単に閲覧できるサイトです。2000年の全国都市雇用圏のページです。">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <link rel="stylesheet" href="/css/ueamap2000.css">
+        <link rel="stylesheet" href="/css/footer.css">
+        <script type="text/javascript" src="/js/jquery/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="/js/leaflet/leaflet.css">
+        <script type="text/javascript" src="/js/leaflet/leaflet.js"></script>
+    </head>
+    <body>
+        <!-- ヘッダの挿入 -->
+        <%- include('header') %> 
+        <main>
+            <h2>全国都市雇用圏マップ-2000（平成12）年</h2>
+            <p class="attention">読み込みに時間がかかる場合があります。</p>
+            <p class="attention">ポップアップの都市圏名をクリックすることで各都市圏のページへ飛ぶことができます。</p>
+            <div id='map'></div>
+        </main>
+        <!-- フッタの挿入 -->
+        <%- include('footer') %> 
+    </body>
+    <script type="text/javascript" src="/geofile/uea2000.js"></script>
+    <script type="text/javascript" src="/js/ueamap2000.js"></script>
+</html>

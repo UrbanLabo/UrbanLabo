@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+main {
+    float: left;
+    width: 100%;
+    background-image: url(../img/bg-img-op06.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+}
+
+footer {
+    clear: both;
+}
+
+/* 都市雇用圏マップ2015の装飾指定 */
+#map {
+    width: 75%;
+    min-width: 500px;
+    height: 750px;
+    margin-left: 35px;
+}
+
+.attention {
+    padding-left: 35px;
+}
+.leaflet-popup-content p{
+    color: black;
+    font-size: 12px;
+}
+
+main h2 {
+    padding-left: 35px;
+}
+
