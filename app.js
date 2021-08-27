@@ -20,20 +20,20 @@ app.use(express.static('public'));
 }); */
 
 //heroku用プール接続
-/* const pool = mysql.createPool({
+const pool = mysql.createPool({
   host: 'us-cdbr-east-04.cleardb.com',
   user: 'bb1497301ec843',
   password: '8fe11df3',
   database: 'heroku_60f1468f3eac4a0'
-});  */
+}); 
 
 //ローカル用プール
-const pool = mysql.createPool({
+/* const pool = mysql.createPool({
   host: 'localhost',
   user: 'root',
   password: 'mysmue861',
   database: 'uea'
-}); 
+});  */
 
 //接続が出来ない時のエラー表示
   pool.getConnection((err, connection) => {
@@ -220,11 +220,11 @@ app.get('/ueaData2015/:ueaCode', (req, res) => {
 }); */
 
 //herokuデプロイ用
-/* let port = process.env.PORT;
+let port = process.env.PORT;
 if (port == null || port == "") {
   port = 8000;
 }
-app.listen(port); */
+app.listen(port);
 
 //ローカル環境用
-app.listen(3000);
+//app.listen(3000);
