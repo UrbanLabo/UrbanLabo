@@ -285,7 +285,7 @@ const baseMap = {
     "中心都市DID人口" : popDidC1,
     "年齢中位数" : midAge, 
     "年間商品販売額" : salesMar,
-    "工業製品出荷額等" : industry
+    "製造品出荷額等" : industry
 };
 const orverlayMap = {
 

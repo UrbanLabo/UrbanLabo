@@ -25,7 +25,7 @@ const pool = mysql.createPool({
   user: 'bb1497301ec843',
   password: '8fe11df3',
   database: 'heroku_60f1468f3eac4a0'
-}); 
+});
 
 //ローカル用プール
 /* const pool = mysql.createPool({
@@ -33,7 +33,7 @@ const pool = mysql.createPool({
   user: 'root',
   password: 'mysmue861',
   database: 'uea'
-});  */
+}); */
 
 //接続が出来ない時のエラー表示
   pool.getConnection((err, connection) => {
@@ -224,7 +224,7 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 8000;
 }
-app.listen(port);
+app.listen(port); 
 
 //ローカル環境用
 //app.listen(3000);

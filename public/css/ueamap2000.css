@@ -33,3 +33,11 @@ main h2 {
     padding-left: 35px;
 }
 
+.description {
+    background-color: #33A6B8;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 1000px;
+    padding: 10px;
+}
