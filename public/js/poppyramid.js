@@ -51,7 +51,7 @@ $.get({url: '/ueaData2015/' + ueaCode, dataType: 'json', type: 'GET'})
         max = max-5*(Math.pow(10, parseInt(digits-2)))
     }
     
-    console.log('mas:'+max);
+    //console.log('mas:'+max);
 
     //男性（左）のグラフ作成
     var ctx = document.getElementById('men');

@@ -141,5 +141,4 @@ selectCode.onchange = function(){
     console.log(selectCityName);
     console.log(selected);
     getData(selected);
-    
 }
